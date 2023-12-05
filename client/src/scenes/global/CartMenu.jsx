@@ -114,7 +114,7 @@ const CartMenu = () => {
                       </Box>
                       {/* Price */}
                       <Typography fontWeight="bold">
-                        {item.attributes.price}
+                        ${item.attributes.price}
                       </Typography>
                     </FlexBox>
                   </Box>
@@ -125,7 +125,7 @@ const CartMenu = () => {
           </Box>
 
           {/* Actions */}
-          <Box m="20px">
+          <Box m="20px 0">
             <FlexBox m="20px 0">
               <Typography fontWeight="bold">Subtotal</Typography>
               <Typography fontWeight="bold">${totalPrice}</Typography>
@@ -133,7 +133,7 @@ const CartMenu = () => {
             <Button
               sx={{
                 backgroundColor: shades.primary[400],
-                color: 'white',
+                color: '#fff',
                 borderRadius: 0,
                 minWidth: '100%',
                 p: '20px 40px',
