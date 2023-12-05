@@ -144,7 +144,7 @@ const CartMenu = () => {
                   color: shades.primary[200],
                 },
               }}
-              disabled={cart.length === 0}
+              // disabled={cart.length === 0}
               onClick={() => {
                 navigate('/checkout');
                 dispatch(setIsCartOpen({}));
