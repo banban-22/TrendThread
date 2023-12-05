@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </Box>
         <Box>
-          <Typography variant="h4" frontWeight="bold" mb="30px">
+          <Typography variant="h4" fontWeight="bold" mb="30px">
             About Us
           </Typography>
           <Typography mb="30px">Terms & Conditions</Typography>
@@ -43,7 +43,7 @@ const Footer = () => {
           <Typography mb="30px">Careers</Typography>
         </Box>
         <Box>
-          <Typography variant="h4" frontWeight="bold" mb="30px">
+          <Typography variant="h4" fontWeight="bold" mb="30px">
             Customer Care
           </Typography>
           <Typography mb="30px">Terms & Conditions</Typography>
@@ -54,7 +54,7 @@ const Footer = () => {
 
         <Box width="clamp(20%, 25%, 30%)">
           <Box>
-            <Typography variant="h4" frontWeight="bold" mb="30px">
+            <Typography variant="h4" fontWeight="bold" mb="30px">
               Contact Us
             </Typography>
             <Typography mb="30px">

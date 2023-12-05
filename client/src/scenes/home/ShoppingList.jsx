@@ -15,12 +15,16 @@ const ShoppingList = () => {
   };
 
   async function getItems() {
-    const items = await fetch(
-      'http://localhost:1337/api/items?populate=image',
-      { method: 'GET' }
-    );
-    const itemsJSON = await items.json();
-    dispatch(setItems(itemsJSON.data));
+    try {
+      const items = await fetch(
+        'http://localhost:1337/api/items?populate=image',
+        { method: 'GET' }
+      );
+      const itemsJSON = await items.json();
+      dispatch(setItems(itemsJSON.data));
+    } catch (error) {
+      console.error('Error fetching items:', error);
+    }
   }
 
   useEffect(() => {
